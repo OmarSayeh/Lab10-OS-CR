@@ -21,27 +21,24 @@ def subtract(a,b):
 def mul(a,b):
     return a*b
 
-def div(a,b):
-    if a == 0:
+def div(a, b):
+    if b == 0:
         raise ZeroDivisionError
-    return b / a
-
-def logarithm(a,b):
-    if a < 0:
+    return a / b
+def logarithm(a, base):
+    if a <= 0:
         raise ValueError
-    return math.log(b,a)
-
+    if base <= 0 or base == 1:
+        raise ValueError
+    return math.log(a, base)
 def exp(a,b):
     return a**b
 
 
 def square_root(a):
-    try:
-        if a < 0:
-            raise ValueError
-        return math.sqrt(a)
-    except ValueError as error:
-        return None
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
     try:
