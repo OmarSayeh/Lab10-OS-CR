@@ -3,8 +3,6 @@
 # Partner 2: Calli reiver
 
 
-
-
 import unittest
 from calculator import *
 
@@ -17,9 +15,9 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(5, 3), 2)
-        self.assertEqual(sub(0, 3), 0)
-        self.assertEqual(sub(10, 10), 2)
+        self.assertEqual(subtract(5, 3), 2)
+        self.assertEqual(subtract(0, 3), 0)
+        self.assertEqual(subtract(10, 10), 2)
     # ##########################
 
     ######## Partner 1
@@ -41,19 +39,19 @@ class TestCalculator(unittest.TestCase):
             div(0,5)
 
     def test_log(self): # 3 assertions
-        self.assertAlmostEqual(log(8, 2), 3)
-        self.assertAlmostEqual(log(100, 10), 2)
-        self.assertAlmostEqual(log(1, 10), 0)
+        self.assertAlmostEqual(logarithm(8, 2), 3)
+        self.assertAlmostEqual(logarithm(100, 10), 2)
+        self.assertAlmostEqual(logarithm(1, 10), 0)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            log(0,5)
+            logarithm(0,5)
     # ##########################
     
     ######## Partner 1
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
-            log(0, 5)  # log(0) is invalid
+            logarithm(0, 5)  # log(0) is invalid
     #     fill in code
 
     def test_hypotenuse(self):
