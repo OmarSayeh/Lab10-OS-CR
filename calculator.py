@@ -1,3 +1,7 @@
+# https://github.com/OmarSayeh/Lab10-OS-CR.git
+# Partner 1: Omar Sayeh
+# Partner 2: Calli reiver
+
 import math
 
 """

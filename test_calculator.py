@@ -3,8 +3,6 @@
 # Partner 2: Calli reiver
 
 
-
-
 import unittest
 from calculator import *
 
