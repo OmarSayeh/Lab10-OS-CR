@@ -8,6 +8,23 @@ One function per operation, in order.
 
 import math
 
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError
+        return math.sqrt(a)
+    except ValueError as error:
+        return None
+
+def hypotenuse(a, b):
+    try:
+        return math.hypot(a, b)
+    except Exception as e:
+        return None
+
+
+
+
 def add(a, b):
     return a + b
 
@@ -33,6 +50,8 @@ def logarithm(a, b):
 def exponent(a, b):
     return a**b
 
+
+print(square_root(-1))
 
 
 
