@@ -25,12 +25,14 @@ def div(a, b):
     if b == 0:
         raise ZeroDivisionError
     return a / b
+
 def logarithm(a, base):
     if a <= 0:
         raise ValueError
     if base <= 0 or base == 1:
         raise ValueError
     return math.log(a, base)
+
 def exp(a,b):
     return a**b
 
